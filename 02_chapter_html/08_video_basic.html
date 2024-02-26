@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- TODO: 사용법: <video width="640" controls="controls"></video> -->
+    <!-- TODO: 사용법: width="속성값"   ///동영상 가로 크기 지정 -->
+    <!-- TODO: 사용법: controls="controls"  ///동영상 조작 패널 -->
+    <!-- TODO: 사용법: <source src="동영상_파일_경로(또는 url)" /> -->
+    <!-- TODO: 사용법: <source type="video/확장자" /> -->
+    <!-- 동영상 파일 확장자: .mp4, .webm 등 -->
+
+    <video width="640" controls="controls">
+        <!-- 윗 줄의 mp4 파일이 우선 실행되며, webm 파일은 무시됨. -->
+        <!-- mp4 파일이 실행되지 않음을 대비하여 서브링크를 걸어 놓는 것. -->
+        <!-- 웹 브라우저 별로 지원하는 확장자가 다를 경우 -->
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+        <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.webm" type="video/webm" />
+    </video>
+</body>
+</html>
